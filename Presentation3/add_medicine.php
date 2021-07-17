@@ -70,12 +70,17 @@ session_start();
 			<form method="post" class="message">
 				<h4>Medicine</h4>
 				<input id="text" type="text" name="medicine_name"><br><br>
-				<h4>When to take (YYY-MM-DD HH:MM:SS)</h4>
+				<h4>When to take (YYYY-MM-DD HH:MM:SS)</h4>
 				<input id="text" type="text" name="take_date"><br><br>
 				<h4>Amount</h4>
 				<input id="text" type="text" name="amount"><br><br>
+<<<<<<< HEAD
 				<h4>Next refill (YYY-MM-DD)</h4>
 				<input id="text" type="text" name="next_refill"><br><br>
+=======
+				<h4>Next refill (YYYY-MM-DD)</h4>
+				<input id="text" type="password" name="next_refill"><br><br>
+>>>>>>> 01635c31bc94fde1df50f08ffaeb5b47f0ad905c
 
 				<input type="submit" value="Add Medication"/>
 
