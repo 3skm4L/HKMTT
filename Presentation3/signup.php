@@ -33,52 +33,60 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Signup</title>
+	<meta charset="UTF-8">
+	<title>Sign-Up</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
-
-	<style type="text/css">
-	
-	#text{
-
-		height: 25px;
-		border-radius: 5px;
-		padding: 4px;
-		border: solid thin #aaa;
-		width: 100%;
-	}
-
-	#button{
-
-		padding: 10px;
-		width: 100px;
-		color: white;
-		background-color: lightblue;
-		border: none;
-	}
-
-	#box{
-
-		background-color: grey;
-		margin: auto;
-		width: 300px;
-		padding: 20px;
-	}
-
-	</style>
-
-	<div id="box">
-		
-		<form method="post">
-			<div style="font-size: 20px;margin: 10px;color: white;">Signup</div>
-
-			<input id="text" type="text" name="user_name"><br><br>
-			<input id="text" type="password" name="password"><br><br>
-
-			<input id="button" type="submit" value="Signup"><br><br>
-
-			<a href="login.php">Click to Login</a><br><br>
-		</form>
+	<div id="header">
+		<div>
+			<div class="logo">
+				<a href="index.php">HealthKeeper</a>
+			</div>
+			<ul id="navigation">
+				<li class="active">
+					<a>   </a>
+				</li>
+				<li>
+					<a href="medications.php">My Medications</a>
+				</li>
+				<li>
+					<a href="help.php">Need help?</a>
+				</li>
+				<li>
+					<a href="logout.php">Logout</a>
+				</li>
+			</ul>
+		</div>
 	</div>
+	
+	
+	<div id="contents">
+		<div class="features">
+		
+			<form action="login.php" method="post" class="message">
+				<h3>Signup</h3>
+				
+				<h4>Username</h4>
+				<input id="text" type="text" name="user_name"/>
+				
+				<h4>Password</h4>
+				<input id="text" type="password" name="password"/><br><br>
+				<input type="submit" value="Signup!">
+			</form>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="clearfix">
+			<div id="connect">
+				<a  target="_blank" class="facebook"></a><a target="_blank" class="googleplus"></a><a target="_blank" class="twitter"></a><a  target="_blank" class="tumbler"></a>
+			</div>
+			<p>
+				© 2021 Two man group. All Rights Reserved
+			</p>
+		</div>
+	</div>
+</body>
+</html>
 </body>
 </html>

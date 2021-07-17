@@ -64,36 +64,6 @@ session_start();
 		</div>
 	</div>
 
-	<style type="text/css">
-	
-	#text{
-
-		height: 25px;
-		border-radius: 5px;
-		padding: 4px;
-		border: solid thin #aaa;
-		width: 100%;
-	}
-
-	#button{
-
-		padding: 10px;
-		width: 100px;
-		color: white;
-		background-color: lightblue;
-		border: none;
-	}
-
-	#box{
-
-		background-color: grey;
-		margin: auto;
-		width: 300px;
-		padding: 20px;
-	}
-
-	</style>
-
 	<div id="contents">
 		<div class="features">
 		
@@ -105,7 +75,7 @@ session_start();
 				<h4>Amount</h4>
 				<input id="text" type="text" name="amount"><br><br>
 				<h4>Next refill (YYY-MM-DD)</h4>
-				<input id="text" type="password" name="next_refill"><br><br>
+				<input id="text" type="text" name="next_refill"><br><br>
 
 				<input type="submit" value="Add Medication"/>
 
@@ -122,7 +92,5 @@ session_start();
 			</p>
 		</div>
 	</div>
-</body>
-</html>
 </body>
 </html>
