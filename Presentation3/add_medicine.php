@@ -37,9 +37,32 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Add Medication</title>
+	<meta charset="UTF-8">
+	<title>Add Medications</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
+	<div id="header">
+		<div>
+			<div class="logo">
+				<a href="index.php">HealthKeeper</a>
+			</div>
+			<ul id="navigation">
+				<li class="active">
+					<a>   </a>
+				</li>
+				<li>
+					<a href="medications.php">My Medications</a>
+				</li>
+				<li>
+					<a href="help.php">Need help?</a>
+				</li>
+				<li>
+					<a href="logout.php">Logout</a>
+				</li>
+			</ul>
+		</div>
+	</div>
 
 	<style type="text/css">
 	
@@ -71,22 +94,35 @@ session_start();
 
 	</style>
 
-	<div id="box">
+	<div id="contents">
+		<div class="features">
 		
-		<form method="post">
-			<h4>Medicine</h4>
-			<input id="text" type="text" name="medicine_name"><br><br>
-			<h4>When to take (YYY-MM-DD HH:MM:SS)</h4>
-			<input id="text" type="text" name="take_date"><br><br>
-			<h4>Amount</h4>
-			<input id="text" type="text" name="amount"><br><br>
-			<h4>Next refill (YYY-MM-DD)</h4>
-			<input id="text" type="password" name="next_refill"><br><br>
+			<form method="post" class="message">
+				<h4>Medicine</h4>
+				<input id="text" type="text" name="medicine_name"><br><br>
+				<h4>When to take (YYY-MM-DD HH:MM:SS)</h4>
+				<input id="text" type="text" name="take_date"><br><br>
+				<h4>Amount</h4>
+				<input id="text" type="text" name="amount"><br><br>
+				<h4>Next refill (YYY-MM-DD)</h4>
+				<input id="text" type="password" name="next_refill"><br><br>
 
-			<input id="button" type="submit" value="Add Medicine"><br><br>
+				<input type="submit" value="Add Medication"/>
 
-			<a href="medications.php">My Medications</a><br><br>
-		</form>
+			</form>
+		</div>			
 	</div>
+	<div id="footer">
+		<div class="clearfix">
+			<div id="connect">
+				<a  target="_blank" class="facebook"></a><a target="_blank" class="googleplus"></a><a target="_blank" class="twitter"></a><a  target="_blank" class="tumbler"></a>
+			</div>
+			<p>
+				© 2021 Two man group. All Rights Reserved
+			</p>
+		</div>
+	</div>
+</body>
+</html>
 </body>
 </html>
