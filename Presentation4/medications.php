@@ -101,8 +101,8 @@ session_start();
 					?>
 					</table>
 
-				<form method="post" class='message'>
-					<input id="text" type="text" name="id">
+				<form method="post">
+					<input id="text" type="text" name="id" value="Enter id" onFocus="this.select();">
 					<input type="submit" value="Delete">
 				</form>
 			</div>
