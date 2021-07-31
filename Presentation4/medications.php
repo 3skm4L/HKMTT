@@ -101,7 +101,7 @@ session_start();
 					?>
 					</table>
 
-				<form method="post">
+				<form method="post" class='message'>
 					<input id="text" type="text" name="id">
 					<input type="submit" value="Delete">
 				</form>
